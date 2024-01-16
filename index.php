@@ -28,7 +28,8 @@ require __DIR__ . '/data.php';
                             <h6 class="card-subtitle mb-2 text-muted">
                                 <?= $product->price ?> €
                             </h6>
-                            <p class="card-category"><?= $product->category->name ?></p>
+                            <span class="card-category"><?= get_class($product) ?></span>
+                            <i class="card-category-icon <?= $product->category->icon ?>"></i>
                             <img class="card-img" src="<?= $product->image ?>">
                         </div>
                     </div>
