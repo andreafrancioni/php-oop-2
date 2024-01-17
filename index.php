@@ -19,7 +19,7 @@ require __DIR__ . '/data.php';
         </div>
         <div class="row">
             <?php foreach ($products as $product) : ?>
-                <div class="col-4">
+                <div class="col-3">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">
@@ -28,7 +28,8 @@ require __DIR__ . '/data.php';
                             <h6 class="card-subtitle mb-2 text-muted">
                                 <?= $product->price ?> €
                             </h6>
-                            <span class="card-category"><?= get_class($product) ?></span>
+                            <p class="card-category"><?= get_class($product) ?></p>
+                            <span><?= $product->category->name ?></span>
                             <i class="card-category-icon <?= $product->category->icon ?>"></i>
                             <img class="card-img" src="<?= $product->image ?>">
                         </div>
