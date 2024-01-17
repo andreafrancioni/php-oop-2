@@ -9,13 +9,13 @@ class Utente extends Cliente
     public $username;
     public $password;
     public bool $registrato = true;
-    public $cartaDiCredito;
+    public $cartadicredito;
 
-    public function __construct($name, $username, $password, CartaDiCredito $cartaDiCredito)
+    public function __construct($name, $username, $password, CartaDiCredito $cartadicredito)
     {
         $this->username = $username;
         $this->password = $password;
-        $this->cartaDiCredito = $cartaDiCredito;
+        $this->cartadicredito = $cartadicredito;
     }
 
     public function getUsername()
