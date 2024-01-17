@@ -4,6 +4,10 @@
 require_once __DIR__ . '/Models/Cibo.php';
 require_once __DIR__ . '/Models/Cucce.php';
 require_once __DIR__ . '/Models/Giochi.php';
+require_once __DIR__ . '/Models/Colore.php';
+require_once __DIR__ . '/Models/Utente.php';
+
+$visitatore = new Cliente("Andrea", "Andrea1998", "Pincopallino123");
 
 $dog = new Category("Cane", "fas fa-dog");
 $cat = new Category("Gatto", "fas fa-cat");

@@ -18,6 +18,7 @@ require __DIR__ . '/data.php';
             <h1 class="text-center">Zoolean</h1>
         </div>
         <div class="row">
+            <h1><?= (isset($visitatore->registrato) && if($visitatore->registrato = true)) ? "Benvenuto " . $visitatore->name : "Benvenuto Ospite" ?></h1>
             <?php foreach ($products as $product) : ?>
                 <div class="col-3">
                     <div class="card">
@@ -31,7 +32,7 @@ require __DIR__ . '/data.php';
                             <p class="card-category"><?= get_class($product) ?></p>
                             <span><?= $product->category->name ?></span>
                             <i class="card-category-icon <?= $product->category->icon ?>"></i>
-                            <p class="card-product-color">Colore: <?= $product->colore ?></p>
+                            <p class="card-product-color"><?= (isset($product->colore)) ? "Colore: " . $product->colore : "" ?></p>
                             <img class="card-img" src="<?= $product->image ?>">
                         </div>
                     </div>
