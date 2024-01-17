@@ -31,6 +31,7 @@ require __DIR__ . '/data.php';
                             <p class="card-category"><?= get_class($product) ?></p>
                             <span><?= $product->category->name ?></span>
                             <i class="card-category-icon <?= $product->category->icon ?>"></i>
+                            <p class="card-product-color">Colore: <?= $product->colore ?></p>
                             <img class="card-img" src="<?= $product->image ?>">
                         </div>
                     </div>
