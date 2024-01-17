@@ -7,7 +7,8 @@ require_once __DIR__ . '/Models/Giochi.php';
 require_once __DIR__ . '/Models/Colore.php';
 require_once __DIR__ . '/Models/Utente.php';
 
-$visitatore = new Cliente("Andrea", "Andrea1998", "Pincopallino123");
+$visitatore = new Utente("Andrea", "Andrea1998", "Pincopallino123", 1111222233334444, 1234, "17/01/2024");
+//$visitatore = new Cliente;
 
 $dog = new Category("Cane", "fas fa-dog");
 $cat = new Category("Gatto", "fas fa-cat");

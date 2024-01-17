@@ -18,7 +18,7 @@ require __DIR__ . '/data.php';
             <h1 class="text-center">Zoolean</h1>
         </div>
         <div class="row">
-            <h1><?= (isset($visitatore->registrato) && if($visitatore->registrato = true)) ? "Benvenuto " . $visitatore->name : "Benvenuto Ospite" ?></h1>
+            <h2><?= (isset($visitatore->registrato)) ? "Benvenuto " . $visitatore->username : "Benvenuto Ospite" ?></h2>
             <?php foreach ($products as $product) : ?>
                 <div class="col-3">
                     <div class="card">
