@@ -11,7 +11,7 @@ class Utente extends Cliente
     public bool $registrato = true;
     public $cartadicredito;
 
-    public function __construct($name, $username, $password, CartaDiCredito $cartadicredito)
+    public function __construct($username, $password, CartaDiCredito $cartadicredito)
     {
         $this->username = $username;
         $this->password = $password;
