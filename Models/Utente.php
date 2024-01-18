@@ -9,6 +9,7 @@ class Utente extends Cliente
     public $username;
     public $password;
     public bool $registrato = true;
+    public int $sconto = 20;
     public $cartadicredito;
 
     public function __construct($username, $password, CartaDiCredito $cartadicredito)
